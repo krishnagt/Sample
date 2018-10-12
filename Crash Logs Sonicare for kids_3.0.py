@@ -26,7 +26,7 @@ driver = webdriver.Chrome("/Users/mobileopsblr/Downloads/chromedriver")
 # here = os.path.dirname(os.path.dirname(__file__))
 # Updated the details for windows and Mac/Linux
 here = os.path.dirname(os.path.abspath(__file__))
-print here
+print(here)
 directoryname = 'new'
 
 #specify the URL/specify as parameter/automate...
@@ -127,7 +127,7 @@ if(totalcrashes!=str('0')):
     directoryname = appname+'_'+prev_month_name+'- 2018'
     #check if the directory is already existing
     if (os.path.isdir(os.path.join(here, directoryname))):
-        print "Crash log folder already exits"
+        print("Crash log folder already exits")
     else:
         #Updated the below to work seemlessly for windows and Mac/Linux
         dirnew = here + os.sep + directoryname
@@ -199,7 +199,7 @@ if(totalcrashes!=str('0')):
             # Strip and get the current month without the number
             clt = str(results1).strip('[]').strip("''").split(",")[0]
             currentlogtime = re.sub(r' \d+', '', clt)
-            print currentlogtime
+            print(currentlogtime)
 
             # patterns = ['software testing', 'guru99']
             # text = 'software testing is fun?'
@@ -269,7 +269,7 @@ if(totalcrashes!=str('0')):
                 nextButton2 = driver.find_element_by_xpath('//button[@aria-label="Next page"]')
                 nextButton2.click()
             except TimeoutException:
-                print "Timed out waiting for page to load"
+                print("Timed out waiting for page to load")
 
             # take care of load after every 5 logs
             if counter == flagcounter:

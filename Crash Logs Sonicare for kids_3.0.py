@@ -20,7 +20,7 @@ usernameStr = 'apps.philipscl.admin@philips.com'
 #after installing the webdriver copy/paste it in the path
 #path : usr->local->bin(ubuntu)...maybe different for any other OS.
 
-driver = webdriver.Chrome("/Users/mobileopsblr/Downloads/chromedriver")
+driver = webdriver.Chrome("/Users/Shared/Jenkins/Home/workspace/chromedriver")
 
 # get the current script path.
 # here = os.path.dirname(os.path.dirname(__file__))

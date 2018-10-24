@@ -59,7 +59,9 @@ username.send_keys(usernameStr)
 nextButton = driver.find_element_by_id('identifierNext')
 nextButton.click()
 time.sleep(2)
-driver.find_element_by_xpath(".//*[@type='password']").send_keys("CL@dmin15")
+#driver.find_element_by_xpath(".//*[@type='password']").send_keys("CL@dmin15")
+driver.find_element_by_xpath(".//*[@id='password']").send_keys("CL@dmin15")
+
 driver.find_element_by_xpath(".//*[@id='passwordNext']").click()
 time.sleep(5)
 
